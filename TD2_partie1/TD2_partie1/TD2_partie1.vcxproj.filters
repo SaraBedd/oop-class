@@ -35,9 +35,6 @@
     <ClInclude Include="Developpeur.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="fonctions.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Jeu.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -61,6 +58,9 @@
     </ClInclude>
     <ClInclude Include="bibliotheque_cours\verification_allocation.hpp">
       <Filter>Biblio cours</Filter>
+    </ClInclude>
+    <ClInclude Include="fonctions.hpp">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

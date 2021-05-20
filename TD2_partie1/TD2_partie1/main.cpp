@@ -19,7 +19,7 @@ int main(int argc, char** args)
 	//TODO: Appel à votre fonction de création de la liste de jeux
 	// N'oubliez pas que le fichier se nomme jeux.bin
 	ListeJeux lj =  creerListeJeux("jeux.bin");
-	static const std::string ligneSeparation = "\n\033[35m════════════════════════════════════════\033[0m\n";
+	static const std::string ligneSeparation = "\n\033[35m═════════════════════════════════════════════════════\033[0m\n";
 	std::cout << ligneSeparation << std::endl;
 	std::cout << "Premier jeu de la liste :" << std::endl;
 	//TODO: Appel à votre fonction d'affichage de votre liste de jeux

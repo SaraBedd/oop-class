@@ -1,3 +1,7 @@
-﻿  main.cpp
-C:\Users\Sara\source\repos\TD2_partie1\TD2_partie1\main.cpp(22,45): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1252)
-  TD2_partie1.vcxproj -> C:\Users\Sara\source\repos\TD2_partie1\Debug\TD2_partie1.exe
+﻿  bibliotheque_cours.cpp
+C:\Users\Sara\Documents\GitHub\INF1015-TP-team07\TD2_partie1\TD2_partie1\bibliotheque_cours\CodeCoverage_bugfix.h : warning : Il vous manque le fichier CodeCoverage.h de Visual Studio Enterprise ou Preview, avez vous la version Community?
+  verification_allocation.cpp
+  main.cpp
+C:\Users\Sara\Documents\GitHub\INF1015-TP-team07\TD2_partie1\TD2_partie1\main.cpp(22,45): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1252)
+  Generating Code...
+  TD2_partie1.vcxproj -> C:\Users\Sara\Documents\GitHub\INF1015-TP-team07\TD2_partie1\Debug\TD2_partie1.exe
