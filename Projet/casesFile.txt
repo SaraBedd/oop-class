@@ -1,0 +1,8 @@
+Hall d'entree	Le sol est recouvert de tapis turque et tibetain.	Salon	x	x	x
+Salon	Au centre se trouve une cheminee. Un petit chat noir dort sur le canappe.	Salle a manger	Couloir	Hall d'entree	x
+Couloir	Les murs sont blancs.	x	Chambre	x	Salon
+Chambre	Grande piece lumineuse. Une Nintendo switch se trouve sur le lit.	Bureau	Balcon	x	Couloir
+Bureau	Un etudiant du cours INF1015 est en train de coder son TP. 	x	x	Chambre	x
+Balcon	Belle vue sur le jardin.	x	x	x	Chambre
+Salle a manger	Il y a une corbeille de fruit au centre de la table.	Jardin	x	Salon	x
+Jardin	Le chien est dehors il te tend une balle.	x	x	Salle a manger	x

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Documentation">
+      <UniqueIdentifier>{8066e00c-b0de-4e03-aac1-b8bda3737425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fichierText">
+      <UniqueIdentifier>{dd78f5dd-e973-4512-96ff-aca2fb511de3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Case.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Carte.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EtatJeu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Jeu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EntreeUtilisateur.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Case.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Carte.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EtatJeu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Jeu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EntreeUtilisateur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="CMakeLists.txt" />
+    <Text Include="casesFile.txt">
+      <Filter>fichierText</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\doc\Vcpkg.md">
+      <Filter>Documentation</Filter>
+    </None>
+    <None Include="..\doc\Classroom.md">
+      <Filter>Documentation</Filter>
+    </None>
+    <None Include="..\README.md" />
+  </ItemGroup>
+</Project>
