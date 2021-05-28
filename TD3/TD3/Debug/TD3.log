@@ -1,0 +1,22 @@
+﻿  main.cpp
+C:\Users\Sara\source\repos\TD3\TD3\main.cpp(32,3): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1252)
+C:\Users\Sara\source\repos\TD3\TD3\Liste.hpp(74,27): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\Sara\source\repos\TD3\TD3\Liste.hpp(69): message : while compiling class template member function 'void Liste<Jeu>::ajouterElement(std::shared_ptr<T>)'
+          with
+          [
+              T=Jeu
+          ]
+C:\Users\Sara\source\repos\TD3\TD3\fonctions.hpp(82): message : see reference to function template instantiation 'void Liste<Jeu>::ajouterElement(std::shared_ptr<T>)' being compiled
+          with
+          [
+              T=Jeu
+          ]
+C:\Users\Sara\source\repos\TD3\TD3\fonctions.hpp(37): message : see reference to class template instantiation 'Liste<Jeu>' being compiled
+C:\Users\Sara\source\repos\TD3\TD3\Liste.hpp(62,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Sara\source\repos\TD3\TD3\Liste.hpp(56): message : while compiling class template member function 'Liste<Concepteur> &Liste<Concepteur>::operator =(const Liste<Concepteur> &)'
+C:\Users\Sara\source\repos\TD3\TD3\Liste.hpp(42): message : see reference to function template instantiation 'Liste<Concepteur> &Liste<Concepteur>::operator =(const Liste<Concepteur> &)' being compiled
+C:\Users\Sara\source\repos\TD3\TD3\Liste.hpp(41): message : while compiling class template member function 'Liste<Concepteur>::Liste(const Liste<Concepteur> &)'
+C:\Users\Sara\source\repos\TD3\TD3\Jeu.hpp(21): message : see reference to function template instantiation 'Liste<Concepteur>::Liste(const Liste<Concepteur> &)' being compiled
+C:\Users\Sara\source\repos\TD3\TD3\Jeu.hpp(36): message : see reference to class template instantiation 'Liste<Concepteur>' being compiled
+C:\Users\Sara\source\repos\TD3\TD3\Jeu.hpp(46): warning C4715: 'Jeu::trouverConcepteur': not all control paths return a value
+  TD3.vcxproj -> C:\Users\Sara\source\repos\TD3\Debug\TD3.exe
