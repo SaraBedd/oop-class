@@ -99,7 +99,7 @@ void doublerTaille(unsigned int nouvelleTaille, ListeJeux& lj) {
 // le jeu existant. De plus, en cas de saturation du tableau elements, cette
 // fonction doit doubler la taille du tableau elements de ListeJeux et détruire
 // l'ancien. Utilisez la fonction de doublement écrite plus haut.
-void ajouterJeu(Jeu* j, ListeJeux& lj) {
+void ajouterJeux(Jeu* j, ListeJeux& lj) {
 	if (lj.nElements == lj.capacite) {
 		doublerTaille(max((unsigned int)1, lj.capacite * 2), lj);
 	}
@@ -123,12 +123,12 @@ Jeu* lireJeu(std::istream& f, ListeJeux& lj)
 	// liste de jeux participé est une ListeJeu. Afficher un message lorsque
 	// l'allocation du jeu est réussie
 	Jeu* jeuLu = new Jeu(j);
-	cout << "\n" << "\033[1;32mAllocation en memoire du jeu " << jeuLu->titre << " est reussie\033[0m\n";
+	cout << "\n" << "\033[1;95mAllocation en memoire du jeu " << jeuLu->titre << " est reussie\033[0m\n";
 	// cout << "Allocation en memoire du jeu " << jeuLu->titre << " est reussie" << "\n";
 	jeuLu->designers.elements = new Designer * [j.designers.nElements]{};
 	for (int n : iter::range(jeuLu->designers.nElements)) {
 		jeuLu->designers.elements[n] = lireDesigner(f, lj);
-		ajouterJeu(jeuLu, jeuLu->designers.elements[n]->listeJeuxParticipes);
+		ajouterJeux(jeuLu, jeuLu->designers.elements[n]->listeJeuxParticipes);
 	}
 	return jeuLu;
 }
@@ -144,7 +144,7 @@ ListeJeux creerListeJeux(const std::string nomFichier)
 	{
 		lj.nElements = n;
 		//TODO: Ajouter un jeu à ListeJeux
-		ajouterJeu(lireJeu(f, lj), lj);
+		ajouterJeux(lireJeu(f, lj), lj);
 	}
 	lj.nElements = nElements;
 	//TODO: Renvoyez la ListeJeux
@@ -202,8 +202,8 @@ void detruireJeu(ListeJeux& lj, Jeu* jeu) {
 }
 
 //TODO: Fonction pour détruire une ListeJeux et tous ses jeux OK
-void detruireListeJeu(ListeJeux& lj) {
-	for (Jeu* j : spanListeJeux(lj)) {
+void detruireListeJeux(ListeJeux& lj) {
+	for (Jeu*& j : spanListeJeux(lj)) {
 		detruireJeu(lj, j);
 	}
 	delete[] lj.elements;
@@ -231,7 +231,7 @@ void afficherJeu(const Jeu& j) {
 // Servez-vous de la fonction d'affichage d'un jeu crée ci-dessus. Votre ligne
 // de séparation doit être différent de celle utilisée dans le main
 // /utf-8 
-void afficherListeJeu(const ListeJeux& lj) {
+void afficherListeJeux(const ListeJeux& lj) {
 	for (int n : iter::range(lj.nElements)) {
 		cout << "-----------------------------------------------------" << "\n";
 		afficherJeu(*(lj.elements[n]));

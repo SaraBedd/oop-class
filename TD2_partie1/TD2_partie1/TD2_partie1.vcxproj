@@ -89,7 +89,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>C:\Users\Sara\source\repos\TD2_partie1\TD2_partie1\googletest;C:\Users\Sara\source\repos\TD2_partie1\TD2_partie1\bibliotheque_cours;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\kinda\Desktop\Maya\INF1015E2021\INF1015-TP-team07\TD2_partie1\TD2_partie1\googletest;C:\Users\kinda\Desktop\Maya\INF1015E2021\INF1015-TP-team07\TD2_partie1\TD2_partie1\bibliotheque_cours;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,6 +143,8 @@
   <ItemGroup>
     <ClCompile Include="bibliotheque_cours\bibliotheque_cours.cpp" />
     <ClCompile Include="bibliotheque_cours\verification_allocation.cpp" />
+    <ClCompile Include="Developpeur.cpp" />
+    <ClCompile Include="ListeDeveloppeurs.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>

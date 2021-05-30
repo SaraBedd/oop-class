@@ -25,7 +25,7 @@ Map::Map(string file) {
  * \param	void
  * \return	(shared_ptr<Room>&)		refference to map[0]
  **/
-shared_ptr<Room>& Map::getCarte(){
+shared_ptr<Room>& Map::getMap(){
 	return map_[0];
 }
 

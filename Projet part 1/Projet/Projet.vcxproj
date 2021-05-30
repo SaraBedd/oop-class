@@ -148,19 +148,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Jeu.cpp" />
-    <ClCompile Include="Carte.cpp" />
-    <ClCompile Include="Case.cpp" />
-    <ClCompile Include="EntreeUtilisateur.cpp" />
-    <ClCompile Include="EtatJeu.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="GameState.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Map.cpp" />
+    <ClCompile Include="Room.cpp" />
+    <ClCompile Include="UserInput.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Jeu.h" />
-    <ClInclude Include="Carte.h" />
-    <ClInclude Include="Case.h" />
-    <ClInclude Include="EntreeUtilisateur.h" />
-    <ClInclude Include="EtatJeu.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="Map.h" />
+    <ClInclude Include="Room.h" />
+    <ClInclude Include="UserInput.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="casesFile.txt" />

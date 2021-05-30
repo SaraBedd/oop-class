@@ -4,8 +4,14 @@
 #include <string>
 #include <algorithm>
 
-#include "/src/vcpkg/packages/boost-algorithm_x64-windows/include/boost/algorithm/string/case_conv.hpp"
-#include "/src/vcpkg/packages/boost-algorithm_x64-windows/include/boost/algorithm/string.hpp"
+#include "C:/dev/vcpkg/packages/boost-algorithm_x64-windows/include/boost/algorithm/string/case_conv.hpp"
+
+#include "C:/dev/vcpkg/packages/boost-algorithm_x64-windows/include/boost/algorithm/string.hpp"
+
+
+//#include "/src/vcpkg/packages/boost-algorithm_x64-windows/include/boost/algorithm/string/case_conv.hpp"
+//#include "/src/vcpkg/packages/boost-algorithm_x64-windows/include/boost/algorithm/string.hpp"
+
 
 #include "Room.h"
 

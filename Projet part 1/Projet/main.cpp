@@ -24,10 +24,15 @@ using namespace std::literals;
 
 int main() {
 
+	/*Constructs a map (or house) based on the txt file describing
+	each room available, its description and neighbours.*/
 	Map theMap("Rooms.txt");
+	/*Constructs a game state.*/
 	GameState myRoom(theMap);
+	/*Constructs of a game.*/
 	Game theGame(myRoom);
-	theGame.runJeu();
+	/*Runs the game.*/
+	theGame.runGame();
 
 	return 0;
 }

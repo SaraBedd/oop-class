@@ -1,7 +1,14 @@
 #include "Game.h"
 
-
-void Game::runJeu() {
+/*Runs game. A duck has entered the house. In order to find it, the user
+has to explore the rooms vy entering the direction where he wishes to go.
+Displays the first room the user is in. While the user does not give
+the game over command (x or X), he can explore the rooms as much as needed.
+Displays every room the user finds himself in. If entry is invalid, 
+an error message is displayed. If the direction the user wants to in
+does not offer a room to go in, an error message is displayed.
+The look command offer the user a display of the room he currently is in.*/
+void Game::runGame() {
 
 	cout << "\u001b[33;1m" << " > > > > > > > > > > > > > > > >     INF1015 ROOM EXPLORER 2021     < < < < < < < < < < < < < < < < < " << "\n"
 		<< " > > > - - - - - - - - - - - - - - - - - -  GOTY EDITION  - - - - - - - - - - - - - - - - - - - < < < " << "\u001b[0m" << "\n\n";

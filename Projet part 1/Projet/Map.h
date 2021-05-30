@@ -23,7 +23,7 @@ public:
 
 	void createMap(string fichier);
 
-	shared_ptr<Room>& getCarte();
+	shared_ptr<Room>& getMap();
 
 private:
 	vector<shared_ptr<Room>> map_;

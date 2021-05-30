@@ -18,30 +18,30 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="bibliotheque_cours\bibliotheque_cours.cpp">
       <Filter>Biblio cours</Filter>
     </ClCompile>
     <ClCompile Include="bibliotheque_cours\verification_allocation.cpp">
       <Filter>Biblio cours</Filter>
     </ClCompile>
+    <ClCompile Include="Developpeur.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ListeDeveloppeurs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Designer.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Developpeur.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Jeu.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ListeDesigners.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ListeDeveloppeurs.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ListeJeux.hpp">
@@ -60,6 +60,12 @@
       <Filter>Biblio cours</Filter>
     </ClInclude>
     <ClInclude Include="fonctions.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Developpeur.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ListeDeveloppeurs.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

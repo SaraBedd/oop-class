@@ -13,7 +13,7 @@ public:
 		myRoom_ = currentRoom;
 	}
 
-	void runJeu();
+	void runGame();
 
 private:
 	UserInput userInput_;
