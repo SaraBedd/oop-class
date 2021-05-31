@@ -1,0 +1,15 @@
+﻿  main.cpp
+C:\Users\Sara\source\repos\TD3 V2\TD3 V2\Jeu.hpp(49,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Sara\source\repos\TD3 V2\TD3 V2\fonctions.hpp(37,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Sara\source\repos\TD3 V2\TD3 V2\fonctions.hpp(38,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Sara\source\repos\TD3 V2\TD3 V2\fonctions.hpp(76,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Sara\source\repos\TD3 V2\TD3 V2\main.cpp(24,3): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1252)
+C:\Users\Sara\source\repos\TD3 V2\TD3 V2\main.cpp(29,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Sara\source\repos\TD3 V2\TD3 V2\Liste.hpp(29,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Sara\source\repos\TD3 V2\TD3 V2\Liste.hpp(26): message : while compiling class template member function 'Liste<Jeu>::Liste(const Liste<Jeu> &)'
+C:\Users\Sara\source\repos\TD3 V2\TD3 V2\fonctions.hpp(97): message : see reference to function template instantiation 'Liste<Jeu>::Liste(const Liste<Jeu> &)' being compiled
+C:\Users\Sara\source\repos\TD3 V2\TD3 V2\fonctions.hpp(37): message : see reference to class template instantiation 'Liste<Jeu>' being compiled
+C:\Users\Sara\source\repos\TD3 V2\TD3 V2\Liste.hpp(54,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Sara\source\repos\TD3 V2\TD3 V2\Liste.hpp(51): message : while compiling class template member function 'void Liste<Jeu>::doublerTaille(void)'
+C:\Users\Sara\source\repos\TD3 V2\TD3 V2\Liste.hpp(45): message : see reference to function template instantiation 'void Liste<Jeu>::doublerTaille(void)' being compiled
+  TD3 V2.vcxproj -> C:\Users\Sara\source\repos\TD3 V2\x64\Debug\TD3 V2.exe
