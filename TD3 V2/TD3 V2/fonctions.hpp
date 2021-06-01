@@ -36,7 +36,7 @@ std::shared_ptr<Concepteur> chercherConcepteur(Liste<Jeu>& lj, std::string nom)
 	// sera utile ici
 	for (int i = 0; i < lj.getNbElem(); i++) {
 		for (int j = 0; j < lj[i]->concepteurs_.getNbElem(); j++) {
-			if ((lj[i]->concepteurs_[j]->getName().compare(nom)) == 0) {
+			if (lj[i]->concepteurs_[j]->getName() == nom) {
 				return lj[i]->concepteurs_[j];
 			}
 		}
@@ -58,7 +58,7 @@ std::shared_ptr<Concepteur> lireConcepteur(Liste<Jeu>& lj, std::istream& f)
 	else {
 		std::cout << "\033[92m" << "Allocation en mémoire du designer " << c.getName()
 				  << "\033[0m" << std::endl;
-		return make_shared<Concepteur>(c);
+		return make_shared<Concepteur>(c.getName(), c.getAnneeNaissance(), c.getPays());
 	}
 }
 
@@ -70,10 +70,11 @@ std::shared_ptr<Jeu> lireJeu(std::istream& f, Liste<Jeu>& lj)
 	j.setDeveloppeur(lireString(f));
 	j.concepteurs_.setNbElems(lireUint8(f));
 	//TODO
-	shared_ptr<Jeu> jeu = make_shared<Jeu>(j);
+	//shared_ptr<Jeu> jeu = make_shared<Jeu>(j);
+	shared_ptr<Jeu> jeu = make_shared<Jeu>(j.getTitre(), j.getAnneeSortie(), j.getDeveloppeur(), j.concepteurs_.getNbElem());
 	std::cout << "\033[96m" << "Allocation en mémoire du jeu " << j.getTitre()
 			  << "\033[0m" << std::endl;
-	for (int i = 0; i < jeu->concepteurs_.getNbElem(); i++) {
+	for (int i = 0; i < j.concepteurs_.getNbElem(); i++) {
 		jeu->concepteurs_.ajouterElement(lireConcepteur(lj, f));
 	}
 	return jeu;

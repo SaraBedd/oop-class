@@ -13,7 +13,7 @@ class Jeu
 			titre_ = "";
 			anneeSortie_ = 0;
 			developpeur_ = "";
-			Liste<Concepteur> concepteurs_(1);
+			Liste<Concepteur> concepteurs_();
 		}
 
 		Jeu(std::string titre, unsigned int anneeSortie, std::string developpeur, unsigned int capacite) {
@@ -44,11 +44,10 @@ class Jeu
 
 		//TODO: Votre méthode pour trouver un concepteur selon un critère donné
 		// par un lambda, voir ligne 26 du main.cpp
-		shared_ptr<Concepteur> trouverConcepteurLambda(const function<bool(shared_ptr<Concepteur>&)> critere) {
-			/*for (int i = 0; i < concepteurs_.getNbElem(); i++) {*/
-			for (int i = 0; i < concepteurs_.getNbElem(); i++) {
-				if (critere(concepteurs_[i])) {
-					return concepteurs_[i];
+		shared_ptr<Concepteur> trouverConcepteurLambda(Liste<Concepteur> concepteurs, const function<bool(shared_ptr<Concepteur>&)> critere) {
+			for (int i = 0; i < concepteurs.getNbElem(); i++) {
+				if (critere(concepteurs[i])) {
+					return concepteurs[i];
 				}
 			}
 			return nullptr;

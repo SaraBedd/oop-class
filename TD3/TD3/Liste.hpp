@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
 #include <memory>
-#include <cassert>
 #include "cppitertools/range.hpp"
 
 using namespace std;
@@ -11,68 +10,75 @@ class Liste
 {
 	public:
 		//TODO: Constructeurs et surcharges d'opérateurs
-		Liste() = default;
-		Liste(const Liste& other);	// Constructeur
-		Liste(unsigned int size) {
-			nElements_ = size;
-			capacite_ = size;
-		};
-		shared_ptr<T>& operator[](int index);
-		const shared_ptr<T>& operator[](int index) const;
-		Liste& operator=(const Liste& other);
+		Liste() {
+			nElements_ = 0;
+			capacite_ = 1;
+			listeElements_ = make_unique<shared_ptr<T>[]>(capacite_);
+		}
+
+		Liste(unsigned int capacite) {
+			nElements_ = 0;
+			capacite_ = capacite;
+			listeElements_ = make_unique<shared_ptr<T>[]>(capacite);
+			std::cout << "Liste(capacite)" << "\n";
+		}
+
+		Liste(const Liste<T>& other){
+			capacite_ = other.capacite_;
+			nElements_ = other.nElements_;
+			listeElements_ = make_unique<shared_ptr<T>[]>(nElements_);
+			for (int i = 0; i < other.nElements_; i++) {
+				listeElements_[i] = move(other.listeElements_[i]);
+			}
+		}
+
+		Liste<T>& operator=(const Liste<T>& other) {
+			if (&other != this) {
+				capacite_ = other.capacite_;
+				nElements_ = other.nElements_;
+				for (int i = 0; i < other.nElements_; i++) {
+					listeElements_[i] = move(other.listeElements_[i]);
+				}
+			}
+			return *this;
+		}
+
+		shared_ptr<T>& operator[](int indexe) const{
+			return listeElements_[indexe];
+		}
 
 		//TODO: Méthode pour ajouter un élément à la liste
-		void ajouterElement(shared_ptr<T> element);
-
-		void setNbElems(unsigned int);	// Donné
-		unsigned int getNbElem(void);	// Donné
-		unsigned int getCapacite(void); // Donné
+		void ajouterElement(shared_ptr<T> pointeur) {
+			if (pointeur == nullptr) {
+				cout << "pointeur est null" << "\n";
+			}
+			if (nElements_ >= capacite_) {
+				doublerTaille();
+			}
+			listeElements_[nElements_++] = move(pointeur);
+		}
 
 		//TODO: Méthode pour doubler la taille de la liste
-		void doublerTaille(unsigned int nouvelleTaille);
+		void doublerTaille() {
+			unsigned int nouvelleTaille = 2 * capacite_;
+			auto newListe = make_unique<shared_ptr<T>[]>(nouvelleTaille);
+			for (int i = 0; i < nElements_; i++) {
+				newListe[i] = listeElements_[i];
+			}
+			listeElements_ = move(newListe);
+			capacite_ = nouvelleTaille;
+		}
 
-	private:
-		unique_ptr<shared_ptr<T>[]> listeElements_;	//TODO: attribut contenant les éléments de la liste
-		unsigned int nElements_;		// Donné
-		unsigned int capacite_;			// Donné
+		void setNbElems(unsigned int); // Donné
+		unsigned int getNbElem(void); // Donné
+		unsigned int getCapacite(void); // Donné
 
+private:
+	//TODO: attribut contenant les éléments de la liste
+	unique_ptr<shared_ptr<T>[]> listeElements_;
+	unsigned int nElements_; // Donné
+	unsigned int capacite_; // Donné
 };
-template<typename T>
-Liste<T>::Liste(const Liste<T>& other) {
-	*this = other;
-}
-
-template<typename T>
-shared_ptr<T>& Liste<T>::operator[](int index) {
-	return listeElements_[index];
-}
-
-template<typename T>
-const shared_ptr<T>& Liste<T>::operator[](int index) const {
-	return listeElements_[index];
-}
-
-template<typename T>
-Liste<T>& Liste<T>::operator=(const Liste<T>& other) {
-	if (&other == this) {
-		return *this;
-	}
-	capacite_ = other.capacite_;
-	nElements_ = other.nElements_;
-	for (int i = 0; i < other.nElements_; i++) {
-		listeElements_[i] = other.listeElements_[i];
-	}
-	return *this;
-}
-
-template<typename T>
-void Liste<T>::ajouterElement(shared_ptr<T> element) {
-	if (nElements_ == capacite_) {
-		doublerTaille(capacite_ * 2);
-	}
-	nElements_++;
-	listeElements_[nElements_];
-}
 
 template<typename T>
 void Liste<T>::setNbElems(unsigned int n)
@@ -88,13 +94,4 @@ template<typename T>
 unsigned int Liste<T>::getCapacite(void)
 {
 	return capacite_;
-}
-
-template<typename T>
-void Liste<T>::doublerTaille(unsigned int nouvelleTaille) {
-	auto&& old = move(listeElements_);
-	listeElements_.reset();
-	listeElements_ = make_unique<shared_ptr<T>[]>(nouvelleTaille);
-	listeElements_ = move(old);
-	capacite_ = nouvelleTaille;
 }

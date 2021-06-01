@@ -23,15 +23,23 @@ class Liste
 			std::cout << "Liste(capacite)" << "\n";
 		}
 
-		Liste(const Liste& other){
+		Liste(const Liste<T>& other){
 			capacite_ = other.capacite_;
 			nElements_ = other.nElements_;
+			listeElements_ = make_unique<shared_ptr<T>[]>(nElements_);
 			for (int i = 0; i < other.nElements_; i++) {
 				listeElements_[i] = move(other.listeElements_[i]);
 			}
 		}
 
 		Liste<T>& operator=(const Liste<T>& other) {
+			if (&other != this) {
+				capacite_ = other.capacite_;
+				nElements_ = other.nElements_;
+				for (int i = 0; i < other.nElements_; i++) {
+					listeElements_[i] = move(other.listeElements_[i]);
+				}
+			}
 			return *this;
 		}
 
@@ -41,8 +49,11 @@ class Liste
 
 		//TODO: Méthode pour ajouter un élément à la liste
 		void ajouterElement(shared_ptr<T> pointeur) {
-		if (nElements_ >= capacite_) {
-			doublerTaille();
+			if (pointeur == nullptr) {
+				cout << "pointeur est null" << "\n";
+			}
+			if (nElements_ >= capacite_) {
+				doublerTaille();
 			}
 			listeElements_[nElements_++] = move(pointeur);
 		}
@@ -68,7 +79,6 @@ private:
 	unsigned int nElements_; // Donné
 	unsigned int capacite_; // Donné
 };
-
 
 template<typename T>
 void Liste<T>::setNbElems(unsigned int n)

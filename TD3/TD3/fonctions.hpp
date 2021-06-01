@@ -30,12 +30,12 @@ std::string lireString(std::istream& fichier)
 }
 #pragma endregion
 //TODO
-// Servez-vous de fors traditionnels et non de spans. La surcharge [] vous
-// sera utile ici
 std::shared_ptr<Concepteur> chercherConcepteur(Liste<Jeu>& lj, std::string nom)
 {
-	for (unsigned int i = 0; i < lj.getNbElem(); i++) {
-		for (unsigned int j = 0; j < lj[i]->concepteurs_.getNbElem(); j++) {
+	// Servez-vous de fors traditionnels et non de spans. La surcharge [] vous
+	// sera utile ici
+	for (int i = 0; i < lj.getNbElem(); i++) {
+		for (int j = 0; j < lj[i]->concepteurs_.getNbElem(); j++) {
 			if (lj[i]->concepteurs_[j]->getName() == nom) {
 				return lj[i]->concepteurs_[j];
 			}
@@ -51,13 +51,15 @@ std::shared_ptr<Concepteur> lireConcepteur(Liste<Jeu>& lj, std::istream& f)
 	c.setAnneeNaissance(lireUint16(f));
 	c.setPays(lireString(f));
 	//TODO
-	if (chercherConcepteur(lj, c.getName()) == nullptr) {
-		return make_shared<Concepteur>(c);
+	shared_ptr<Concepteur> concepteurExistant = chercherConcepteur(lj, c.getName());
+	if (concepteurExistant != nullptr) {
+		return concepteurExistant;
 	}
 	else {
-		return chercherConcepteur(lj, c.getName());
+		std::cout << "\033[92m" << "Allocation en mémoire du designer " << c.getName()
+				  << "\033[0m" << std::endl;
+		return make_shared<Concepteur>(c.getName(), c.getAnneeNaissance(), c.getPays());
 	}
-	
 }
 
 std::shared_ptr<Jeu> lireJeu(std::istream& f, Liste<Jeu>& lj)
@@ -68,7 +70,14 @@ std::shared_ptr<Jeu> lireJeu(std::istream& f, Liste<Jeu>& lj)
 	j.setDeveloppeur(lireString(f));
 	j.concepteurs_.setNbElems(lireUint8(f));
 	//TODO
-	return make_shared<Jeu>(j);
+	//shared_ptr<Jeu> jeu = make_shared<Jeu>(j);
+	shared_ptr<Jeu> jeu = make_shared<Jeu>(j.getTitre(), j.getAnneeSortie(), j.getDeveloppeur(), j.concepteurs_.getNbElem());
+	std::cout << "\033[96m" << "Allocation en mémoire du jeu " << j.getTitre()
+			  << "\033[0m" << std::endl;
+	for (int i = 0; i < j.concepteurs_.getNbElem(); i++) {
+		jeu->concepteurs_.ajouterElement(lireConcepteur(lj, f));
+	}
+	return jeu;
 }
 
 Liste<Jeu> creerListeJeux(const std::string nomFichier)
@@ -77,8 +86,10 @@ Liste<Jeu> creerListeJeux(const std::string nomFichier)
 	f.exceptions(std::ios::failbit);
 	int nElements = lireUint16(f);
 	Liste<Jeu> lj(nElements);
-	for (int n : iter::range(nElements)) {
+	for(unsigned int n : iter::range(nElements))
+	{
 		//TODO
+		lj.setNbElems(n);
 		lj.ajouterElement(lireJeu(f, lj));
 	}
 	//TODO: Ajuster le nombre d'éléments présents dans la liste

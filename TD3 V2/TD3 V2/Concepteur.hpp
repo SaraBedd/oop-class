@@ -19,6 +19,7 @@ class Concepteur
 			anneeNaissance_ = anneeNaissance;
 			pays_ = pays;
 		}
+
 		Concepteur(const Concepteur& other) {
 			nom_ = other.nom_;
 			anneeNaissance_ = other.anneeNaissance_;
