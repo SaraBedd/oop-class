@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="BiblioCours">
+      <UniqueIdentifier>{86d3df7b-71b1-4a12-951c-1cf149fef70b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bibliotheque_cours\bibliotheque_cours.cpp">
+      <Filter>BiblioCours</Filter>
+    </ClCompile>
+    <ClCompile Include="bibliotheque_cours\verification_allocation.cpp">
+      <Filter>BiblioCours</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="heros.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="vilains.bin">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="bibliotheque_cours\bibliotheque_cours.hpp">
+      <Filter>BiblioCours</Filter>
+    </ClInclude>
+    <ClInclude Include="bibliotheque_cours\CodeCoverage_bugfix.h">
+      <Filter>BiblioCours</Filter>
+    </ClInclude>
+    <ClInclude Include="bibliotheque_cours\debogage_memoire.hpp">
+      <Filter>BiblioCours</Filter>
+    </ClInclude>
+    <ClInclude Include="bibliotheque_cours\verification_allocation.hpp">
+      <Filter>BiblioCours</Filter>
+    </ClInclude>
+    <ClInclude Include="Affichable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Personnage.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Hero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vilain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="VilainHero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
