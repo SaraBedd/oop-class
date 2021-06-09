@@ -1,0 +1,1 @@
+Bathroom	A key	It's a key	It unlocks the Dining room	Dining room

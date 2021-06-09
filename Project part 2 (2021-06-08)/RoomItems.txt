@@ -1,0 +1,6 @@
+Entrance	A mirror	Round shaped mirror, hanging right next to the door.	you're admirring yourself, when suddetly you here some tapping on the floor.
+Living room	A camera	A professionnal camera sitting on the coffee table.	You're snapping some pictures of the sleeping cat!
+Living room	Parrot	A beautifully coloured bird. It might bite you thoough.	ARGGHHH!	
+Dining room	The duck	white feathered duck eating some lettuce on the table	You caught the duck!
+Bedroom	Bed	A very confy king-sized bed.	You slept for 10 hours and recovered all your HP !
+Garden	Lawnmower	It is very old. I don't know if it could start.	It might explode.

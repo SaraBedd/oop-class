@@ -1,0 +1,9 @@
+Entrance	The hardwood flooring is covered with a large carpet. A white feather is laying by the living room.	Living room	x	x	x
+Living room	The fireplace is lit. A black cat is sleeping on the couch.	Dining room	Hallway	Entrance	x
+Dining room	The dining table is covered with webbed traces leading to the bathroom.	x	Bathroom	Living room	x
+Bathroom	It smells like a jungle in here! The room is filled with plants and succulents	x	Office	x	Dining room
+Office	There's a floor to ceiling bookcase filled with books of all kind! Quack! Quack! *Coming from your right*	x	x	Bedroom	Bathroom
+Bedroom	The room is chilly, seems like there's an air flow.	Office	x	Balcony	Hallway
+Balcony	The balcony is open and it overlooks the garden. Quack! Quack! Quick something is flying to the garden!	Bedroom	x	x	Garden
+Garden	You found the duck! You lay on the grass and enjoy the sun with your new friend!	x	Balcony	x	x
+Hallway	Long corridor with some family pictures on the wall.	x	Bedroom	x	Living room

@@ -1,0 +1,9 @@
+Entrance	Living room	x	x	x
+Living room	x	Hallway	Entrance	x
+Dining room	x	Bathroom	Living room	x
+Bathroom	x	Office	x	x
+Office	x	x	Bedroom	Bathroom
+Bedroom	Office	x	Balcony	Hallway
+Balcony	Bedroom	x	x	Garden
+Garden	x	Balcony	x	x
+Hallway	x	Bedroom	x	Living room

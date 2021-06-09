@@ -1,0 +1,7 @@
+Entrance	The hardwood flooring is covered with a large carpet. A white feather is laying by the living room.	0
+Living room	The fireplace is lit. A black cat is sleeping on the couch.	0
+Dining room	The dining table is covered with webbed traces leading to the bathroom.	1
+Office	There's a floor to ceiling bookcase filled with books of all kind! Quack! Quack! *Coming from your right*	0
+Balcony	The balcony is open and it overlooks the garden. Quack! Quack! Quick something is flying to the garden!	0
+Garden	You found the duck! You lay on the grass and enjoy the sun with your new friend!	0
+Hallway	Long corridor with some family pictures on the wall.	0

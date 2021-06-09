@@ -1,0 +1,2 @@
+Bedroom	The room is chilly, seems like there's an air flow.	0
+Bathroom	It smells like a jungle in here! The room is filled with plants and succulents.	0

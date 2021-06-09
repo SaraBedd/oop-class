@@ -1,2 +1,6 @@
-﻿  main.cpp
-  TD4.vcxproj -> C:\Users\Sara\source\repos\TD4\x64\Debug\TD4.exe
+﻿  bibliotheque_cours.cpp
+C:\Users\Sara\Documents\GitHub\INF1015-TP-team07\TD4\TD4\bibliotheque_cours\CodeCoverage_bugfix.h : warning : Il vous manque le fichier CodeCoverage.h de Visual Studio Enterprise ou Preview, avez vous la version Community?
+  verification_allocation.cpp
+  main.cpp
+  Generating Code...
+  TD4.vcxproj -> C:\Users\Sara\Documents\GitHub\INF1015-TP-team07\TD4\x64\Debug\TD4.exe

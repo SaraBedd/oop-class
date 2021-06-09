@@ -1,0 +1,2 @@
+Hallway	Light switch	It's a light switch	It turns on the light of the living room	Bedroom
+Office	Light switch	It's a light switch	It turns on the light of the Bathroom	Bathroom
