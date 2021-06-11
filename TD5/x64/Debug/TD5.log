@@ -1,0 +1,138 @@
+﻿  bibliotheque_cours.cpp
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\CodeCoverage_bugfix.h : warning : Il vous manque le fichier CodeCoverage.h de Visual Studio Enterprise ou Preview, avez vous la version Community?
+  The contents of <string_view> are available only with C++17 or later.
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\bibliotheque_cours.hpp(80,27): error C7525: inline variables require at least '/std:c++17'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\gsl\span(20,10): fatal error C1083: Cannot open include file: 'gsl/gsl_assert': No such file or directory
+  verification_allocation.cpp
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(46,21): error C7525: inline variables require at least '/std:c++17'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(46,38): error C2864: 'bibliotheque_cours::SansVerifierAllocations::est_actif': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(46,38): message : type is 'bool'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(94,21): error C7525: inline variables require at least '/std:c++17'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(94,49): error C2864: 'bibliotheque_cours::VerifierFuitesAllocations::est_phase_apres_main': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(94,49): message : type is 'bool'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,28): error C2988: unrecognizable template declaration/definition
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,28): error C2143: syntax error: missing ')' before '...'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,28): error C2143: syntax error: missing ';' before '...'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,26): error C2365: 'Ts': redefinition; previous definition was 'template parameter'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109): message : see declaration of 'Ts'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,75): error C2059: syntax error: ')'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,33): error C2988: unrecognizable template declaration/definition
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,33): error C2059: syntax error: '->'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,71): error C2065: 'Ts': undeclared identifier
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,75): error C3527: 'Ts' is not a valid operand for 'sizeof...'. Did you mean to use 'sizeof'?
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,75): error C3523: 'sizeof...' requires as its argument an unexpanded parameter pack
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(113,52): error C7525: inline variables require at least '/std:c++17'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(113,68): error C3861: 'get_blocs_alloues': identifier not found
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\excpt.h(28,3): error C2143: syntax error: missing ';' before 'identifier'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\excpt.h(28,3): warning C4091: 'typedef ': ignored on left of '_EXCEPTION_DISPOSITION' when no variable is declared
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\excpt.h(52,40): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29910\include\excpt.h(52,40): error C2143: syntax error: missing ';' before '__cdecl'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(52,15): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(52,15): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(54,16): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(54,16): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(56,15): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(56,15): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(161,29): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(161,29): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(162,29): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(162,29): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(163,29): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(163,29): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(164,29): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(164,29): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(165,29): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(165,29): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(168,29): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(168,29): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(169,29): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(169,29): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(171,29): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(171,29): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(172,29): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\minwindef.h(172,29): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\ctype.h(220,16): error C3861: '_chvalidator_l': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\ctype.h(248,24): error C3861: '_isctype_l': identifier not found
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(167,29): error C2065: 'ULONG_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(167,40): error C2146: syntax error: missing ')' before identifier 'h'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(176,20): error C2065: 'LONG_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(176,30): error C2146: syntax error: missing ')' before identifier 'h'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(185,22): error C2065: 'UINT_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(185,32): error C2146: syntax error: missing ')' before identifier 'h'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(195,22): error C2065: 'INT_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(195,31): error C2146: syntax error: missing ')' before identifier 'h'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(205,29): error C2065: 'ULONG_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(205,40): error C2146: syntax error: missing ')' before identifier 'p'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(214,28): error C2065: 'UINT_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(214,38): error C2146: syntax error: missing ')' before identifier 'p'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(223,46): error C2065: 'ULONG_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(223,57): error C2146: syntax error: missing ')' before identifier 'p'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(232,20): error C2065: 'LONG_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(232,30): error C2146: syntax error: missing ')' before identifier 'p'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(241,19): error C2065: 'INT_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(241,28): error C2146: syntax error: missing ')' before identifier 'p'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(250,28): error C2065: 'LONG_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(250,38): error C2146: syntax error: missing ')' before identifier 'p'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(260,22): error C2065: 'INT_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(260,30): error C2146: syntax error: missing ')' before identifier 'i'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(270,22): error C2065: 'UINT_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(270,31): error C2146: syntax error: missing ')' before identifier 'ui'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(280,22): error C2065: 'LONG_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(280,31): error C2146: syntax error: missing ')' before identifier 'l'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(290,22): error C2065: 'ULONG_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(290,32): error C2146: syntax error: missing ')' before identifier 'ul'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(304,22): error C2065: 'ULONG_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(304,34): error C2144: syntax error: 'unsigned long' should be preceded by ')'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(304,34): error C2062: type 'unsigned long' unexpected
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(304,50): error C2059: syntax error: ')'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(313,22): error C2065: 'LONG_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(313,33): error C2144: syntax error: 'long' should be preceded by ')'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(313,33): error C2062: type 'long' unexpected
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(313,40): error C2059: syntax error: ')'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(322,49): error C2065: 'ULONG_PTR': undeclared identifier
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(322,60): error C2146: syntax error: missing ')' before identifier 'p'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(420,19): error C2146: syntax error: missing ';' before identifier 'SIZE_T'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(421,18): error C2146: syntax error: missing ';' before identifier 'SSIZE_T'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(469,19): error C2146: syntax error: missing ';' before identifier 'DWORD_PTR'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(491,19): error C2146: syntax error: missing ';' before identifier 'KAFFINITY'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(492,19): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\basetsd.h(492,19): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(469,15): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(469,15): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(470,21): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(470,21): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(470,21): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(472,33): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(472,33): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(473,33): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(473,33): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(474,39): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(474,39): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(474,39): error C2143: syntax error: missing ';' before '*'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(475,33): error C2988: unrecognizable template declaration/definition
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(475,33): error C2143: syntax error: missing ';' before '__unaligned'
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnt.h(475,33): fatal error C1003: error count exceeds 100; stopping compilation
+  main.cpp
+  The contents of <string_view> are available only with C++17 or later.
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\bibliotheque_cours.hpp(80,27): error C7525: inline variables require at least '/std:c++17'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(46,21): error C7525: inline variables require at least '/std:c++17'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(46,38): error C2864: 'bibliotheque_cours::SansVerifierAllocations::est_actif': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(46,38): message : type is 'bool'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(94,21): error C7525: inline variables require at least '/std:c++17'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(94,49): error C2864: 'bibliotheque_cours::VerifierFuitesAllocations::est_phase_apres_main': a static data member with an in-class initializer must have non-volatile const integral type or be specified as 'inline'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(94,49): message : type is 'bool'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,28): error C2988: unrecognizable template declaration/definition
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,28): error C2143: syntax error: missing ')' before '...'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,28): error C2143: syntax error: missing ';' before '...'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,26): error C2365: 'Ts': redefinition; previous definition was 'template parameter'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109): message : see declaration of 'Ts'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,75): error C2059: syntax error: ')'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,33): error C2988: unrecognizable template declaration/definition
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,33): error C2059: syntax error: '->'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,71): error C2065: 'Ts': undeclared identifier
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,75): error C3527: 'Ts' is not a valid operand for 'sizeof...'. Did you mean to use 'sizeof'?
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(109,75): error C3523: 'sizeof...' requires as its argument an unexpanded parameter pack
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(113,52): error C7525: inline variables require at least '/std:c++17'
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\verification_allocation.hpp(113,68): error C3861: 'get_blocs_alloues': identifier not found
+C:\Users\Sara\source\repos\TD5\TD5\iterateur.hpp(3,10): fatal error C1083: Cannot open include file: 'gsl/gsl_assert': No such file or directory
+  Generating Code...

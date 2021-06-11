@@ -1,0 +1,6 @@
+﻿  bibliotheque_cours.cpp
+C:\Users\Sara\source\repos\TD5\TD5\bibliotheque_cours\CodeCoverage_bugfix.h : warning : Il vous manque le fichier CodeCoverage.h de Visual Studio Enterprise ou Preview, avez vous la version Community?
+  verification_allocation.cpp
+  main.cpp
+C:\Users\Sara\source\repos\TD5\TD5\listeliee.hpp(6): fatal error C1075: '{': no matching token found
+  Generating Code...
