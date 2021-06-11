@@ -1,0 +1,32 @@
+1	Entrance	The hardwood flooring is covered with a large carpet. A white feather is laying by the living room.	0
+1	Living room	The fireplace is lit. A black cat is sleeping on the couch.	0
+1	Dining room	The room is all over the place, seems like a hungry duck was feasting on the floor!	1
+1	Office	There's a floor to ceiling bookcase filled with books of all kind! Quack! Quack! *coming from behind*	0
+1	Balcony	The balcony is open and it overlooks the garden.	0
+1	Garden	Looks like it's about to rain, you should probably head back inside!	0
+1	Hallway	Long corridor with some family pictures on the wall.	0
+2	Hallway	Light switch	It's a light switch	Allows you to harness the power of light.
+Bedroom	Neat and cozy, the walls are covered with art! On the floor, webbed foot prints leading to the office.	0
+2	Office	Light switch	It's a light switch	Allows you to harness the power of light.
+Bathroom	The room is filled with plants and succulents. Behind the plants, a locked door.	0
+3	Entrance	Living room	x	x	x
+3	Living room	x	Hallway	Entrance	x
+3	Dining room	x	Bathroom	Living room	x
+3	Bathroom	x	Office	x	x
+3	Office	x	x	Bedroom	Bathroom
+3	Bedroom	Office	x	Balcony	Hallway
+3	Balcony	Bedroom	x	x	Garden
+3	Garden	x	Balcony	x	x
+3	Hallway	x	Bedroom	x	Living room
+4	Entrance	A mirror	Round shaped mirror, hanging right next to the door.	you're admirring yourself, when suddetly you here some tapping on the floor.
+4	Entrance	The white feather	Soft fringed bird plume.	You brush your face with it.
+4	Living room	A Canon camera	A professionnal camera sitting on the coffee table.	You're snapping some pictures of the sleeping cat!
+4	Living room	The couch	Burgundy velvet sofa	You woke up the cat, he yawns and stretches his little paws.
+4	Dining room	A fruit basket	Apples, grapes, bananas and clementines!	You grab a fruit for yourself!
+4	Dining room	The duck	white feathered duck running in circles!	You caught the duck!
+4	Bedroom	A bed	A very confy Queen-sized bed, full of pillows.	You slept for 10 hours and recovered all your HP!
+4	Bedroom	A record player	Cool looking!	You dance on some of your favourite tunes!
+4	Garden	Lawnmower	It is very old. I don't know if it could start.	It might explode.
+4	Bathroom	A candle	Lavender scented	You light it up and smell it for awhile.
+4	Office	A book	A bird encyclopedia	You look at the pretty pictures!
+5	Bathroom	A key	It's a key	It unlocks the Dining room	Dining room
